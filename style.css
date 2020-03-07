@@ -1,0 +1,79 @@
+body {
+    font-family: "Open Sans",Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+}
+
+#status {
+/* avoid an excessively wide status text */
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+table{
+    border-collapse: collapse;
+    table-layout:fixed;
+    font-size:14px;
+    width: 100%;
+}
+
+.favicon{
+    height: 20px;
+    width: 20px;
+}
+
+.footer{
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.url{
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    vertical-align: middle;
+}
+
+.discarded{
+    background-color:#dcdcdc;
+}
+
+.selected{
+    background-color:#f5f5f5;
+}
+
+.hidden{
+    display:none;
+}
+
+#table-scroll {
+    max-height:400px;
+    overflow:auto;  
+    margin-top:20px;
+}
+
+tr:hover{background-color:#dcdcdc}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.grayscale { 
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+img.closeTab{ 
+    content: url('images/close.png');
+    visibility: hidden;
+    height: 20px;
+    width: 20px;
+}
+
+tr:hover img.closeTab{ 
+    visibility: visible;
+}
